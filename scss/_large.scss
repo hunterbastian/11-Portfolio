@@ -1,0 +1,100 @@
+body {
+    display: grid;
+    grid-template-columns: 250px auto;
+}
+#navWrapper {
+    grid-row: 1 / span 3;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    box-shadow: none;
+    border-right: 1px solid rgba(0,0,0,0.05);
+    z-index: 100;
+}
+nav ul {
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    width: 250px;
+    li {
+        flex: none;
+        margin: 1rem 0;
+    }
+    
+    li a {
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 0.75rem 1.5rem;
+        text-align: left;
+        
+        img {
+            margin: 0 1rem 0 0;
+        }
+        
+        span {
+            display: inline-block;
+        }
+    }
+}
+header, nav, main {
+    max-width: 960px;
+    margin: auto;
+}
+
+/* NAVIGATION STUFF GOES HERE  */
+
+/* Contact form additional spacing for large screens */
+.contact-form {
+    gap: $spacer;
+    
+    .submit-btn {
+        padding: 1rem 2.5rem;
+    }
+}
+
+/* Social media large screen adjustments */
+.social-links {
+    padding: 0 2rem 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    .social-icons {
+        gap: 2.5rem;
+        
+        img {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}
+
+main {
+    padding-top: 0;
+    
+    section {
+        padding: $spacer * 2;
+        max-width: 1000px;
+    }
+    
+    h1 {
+        font-size: 3.5rem;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Tech grid large screens */
+.tech-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    
+    .tech-item {
+        padding: 1.5rem;
+    }
+}

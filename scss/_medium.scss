@@ -1,0 +1,54 @@
+/* NAVIGATION STUFF GOES HERE  */
+
+nav {
+    ul {
+        a {
+            img {display: none;}
+            span {display: block;}
+        }
+    }
+}
+
+/* Show navigation text on medium screens */
+nav li a span {
+    display: inline-block;
+}
+
+/* Contact form adjustments */
+.contact-form {
+    grid-template-columns: 1fr 1fr;
+    
+    textarea {
+        min-height: 100px;
+    }
+    
+    .form-group:last-of-type {
+        grid-column: 1 / -1;
+    }
+}
+
+/* Social media adjustments */
+.social-links {
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Tech grid medium screens */
+.tech-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Education section for medium screens */
+.education-container {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: $spacer * 2;
+}
+
+.education-text {
+    flex: 1;
+}
+
+.education-image {
+    flex: 1;
+    margin-top: 0;
+}
